@@ -45,30 +45,6 @@ dloop	subs	R8,R8,#1
 	ADD R6, R6, #1			;counter++
 	B while
 	
-	
-	;ldr	r1,=IO1DIR
-	;ldr	r2,=0x000f0000	;select P1.19--P1.16
-	;str	r2,[r1]		;make them outputs
-	;ldr	r1,=IO1SET
-	;str	r2,[r1]		;set them to turn the LEDs off
-	;ldr	r2,=IO1CLR
-; r1 points to the SET register
-; r2 points to the CLEAR register
-
-	;ldr	r5,=0x00100000	; end when the mask reaches this value
-;wloop	ldr	r3,=0x00010000	; start with P1.16.
-;floop	str	r3,[r2]	   	; clear the bit -> turn on the LED
-
-;delay for about a half second
-	;ldr	r4,=2000000
-;dloop	subs	r4,r4,#1
-	;bne	dloop
-
-	;str	r3,[r1]		;set the bit -> turn off the LED
-	;mov	r3,r3,lsl #1	;shift up to next bit. P1.16 -> P1.17 etc.
-	;cmp	r3,r5
-	;bne	floop
-	;b	wloop
 stop	B	stop
 
 	AREA	TestArray, DATA, READWRITE

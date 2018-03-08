@@ -7,4 +7,4 @@ Assembly language code can be found in **_'App.s'_**
 
 ![alt text][circuit]
 
-[circuit]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Circuit"
+[circuit]: https://github.com/dooleyb1/SevenSegmentDisplay/blob/master/circuit_wiring.png "Circuit"
